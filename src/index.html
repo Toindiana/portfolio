@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta
+      name="description"
+      content="Сайт Веб-разработчика. Создание сайта. HTML, CSS."
+    />
+    <script src="js/main.min.js" defer></script>
+    <title>AleksandrYakovenko</title>
+  </head>
+  <body>
+    <div class="screenModileMenu"></div>
+    <div class="btnModileMenu">
+      <button class="hamburger" id="mobile-menu-btn">
+        <div class="btn__hamb">
+          <div></div>
+        </div>
+      </button>
+    </div>
+    <section class="navigation">
+      <div class="logo">
+        <img src="./img/logo/logo.svg" alt="" />
+        <!-- <h2 class="logo_name">Aleksandr</h2>
+        <br />
+        <h2 class="logo_surname">Yakovenko</h2>
+        <br />
+        <span class="logo_profession">Веб-разработчик</span> -->
+      </div>
+      <ul class="nav">
+        <li data-activ="html" class="nav_item">
+          <img class="nav_item-icon" src="img/nav/html.png" alt="me" /><a
+            class="nav_link"
+            href="#html"
+            >HTML проекты</a
+          >
+        </li>
+        <li data-activ="js" class="nav_item">
+          <img class="nav_item-icon" src="img/nav/js-file.png" alt="me" /><a
+            class="nav_link"
+            href="#js"
+            >JS проекты</a
+          >
+        </li>
+        <li data-activ="certificates" class="nav_item">
+          <img class="nav_item-icon" src="img/nav/certificate.png" alt="me" /><a
+            class="nav_link"
+            href="#certificates"
+            >Дипломы</a
+          >
+        </li>
+        <li data-activ="form" class="nav_item">
+          <img class="nav_item-icon" src="img/nav/communicate.png" alt="me" /><a
+            class="nav_link"
+            href="#form"
+            >Обратная связь</a
+          >
+        </li>
+      </ul>
+    </section>
+    <main>
+      <div class="hero">
+        <div class="background_gray">
+          <h1 class="hero_title">
+            <span class="hero_span">С радостью</span> помогу Вам <br />
+            обрести <span class="hero_span2">свой сайт</span>
+          </h1>
+          <div class="hero__content">
+            <img src="./img/hero/me.webp" alt="" class="hero__content-photo" />
+            <p class="hero__content-text">
+              Привет. Меня зовут Александр. Я&nbsp;&mdash; начинающий
+              веб-разработчик. <br />
+              <br />Если вам необходим лендинг или сайт-визитка,
+              то&nbsp;вы&nbsp;оказались в&nbsp;нужном месте. <br />
+              Я&nbsp;гарантирую выполнить работу в&nbsp;срок и&nbsp;максимально
+              качественно. <br /><br />
+              Чтобы со&nbsp;мной связаться заполните форму обратной связи.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="html" class="projects">
+        <div class="project_titile">
+          <h2 data-block="html" class="project_titile-text">Проекты HTML</h2>
+        </div>
+        <div class="project_items no_block">
+          <div class="projects_item">
+            <div class="project_item-img medi"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт косметических услуг</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка сайта по&nbsp;предоставлению косметических услуг
+                с&nbsp;работающим слайдером. Без адаптива.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/html/medi/"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img no_youtube"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Видеосервис</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка видеосервиса. С&nbsp;мобильной версткой.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/html/no_youtube/no_youtube.html"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img cinema"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт кинотеатра</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка сайта кинотеатра. Есть возможность выбирать места
+                и&nbsp;время сеанса. Также можно посмотреть трейлер. Есть
+                мобильная версия.
+              </p>
+              <a
+                href="https://toindiana.github.io/project_cinema/"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img eva"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Магазин автоковров</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка лендинга для магазина по&nbsp;продаже автоковриков. Есть
+                мобильная версия.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/html/eva/eva.html"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img alivio"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт для помощи в медитации</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Обычная верстка сайта для&nbsp;помощи снятия стресса.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/html/alivio/"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img balloon"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Путешествие на воздушных шарах</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка с использовнием Gulp и SASS. <br />
+                Без адаптива
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/html/balloon/"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+        </div>
+        <!-- project_items -->
+      </div>
+      <!-- projects html-->
+
+      <div id="js" class="projects">
+        <div class="project_titile">
+          <h2 data-block="js" class="project_titile-text">
+            Проекты JavaScript
+          </h2>
+        </div>
+        <div class="project_items no_block">
+          <div class="projects_item">
+            <div class="project_item-img dragAndDrop"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">drag&drop</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Проект реализующий технологию drag&amp;drop.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/drag&drop/dragAndDrop.html"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img slider"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Интересный слайдер</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Красивый слайдер на&nbsp;чистом javascript.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/sliderSources/slider.html"
+                target="_blank"
+                class="project_desc-link"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img fieldBeautiful"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Красота на JS</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Красивый проект на&nbsp;javascript.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/boardSources/boardSources.html"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img game"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Игра на реакцию</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Небольшая игра на&nbsp;реакцию реализованная на&nbsp;javascript.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/aimGame/game.html"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img tanuki"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Динамическая верстка</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Верстка магазина происходит динамически, с&nbsp;использованием
+                технологии JSON.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/delivery/delivery.html"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img todo"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт со списком дел</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Приложение todo реализовано на базовых знаниях PHP и работы с
+                базой данный (MySql).
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/todo"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img melody"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт ЖК</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Сайт для ЖК. С&nbsp;возможностью выбора квартиры
+                на&nbsp;конкретном этаже.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/melody/melody.html"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img weather"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Сайт с погодой</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Сайт работающий с&nbsp;внешним API.
+              </p>
+              <a
+                href="https://yakovenko-aleksandr.ru/projects/js/weather/weather.html"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+
+          <div class="projects_item">
+            <div class="project_item-img booksLibrary"></div>
+            <div class="projects_item-wrap">
+              <h3 class="item_wrap-title">Проект на React</h3>
+              <div class="item_wrap-btn">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="project_desc">
+              <p class="project_desc-text">
+                Проект реализован на React js с использованием Redux.
+              </p>
+              <a
+                href="http://yakovenko-aleksandr.ru/projects/js/booksLibrary/"
+                class="project_desc-link"
+                target="_blank"
+                >перейти на сайт...</a
+              >
+              <div class="desc_close">
+                <div class="cl-btn-3">
+                  <span class="top"></span>
+                  <span class="bot"></span>
+                </div>
+              </div>
+            </div>
+            <!-- project_desc -->
+          </div>
+          <!-- projects_item -->
+        </div>
+        <!-- project_items -->
+      </div>
+      <!-- projects js-->
+
+      <div id="certificates" class="projects certificates">
+        <div class="project_titile">
+          <h2 data-block="certificates" class="project_titile-text">Дипломы</h2>
+        </div>
+        <div class="certificates_items">
+          <img
+            class="certificates_item"
+            src="./img/certificates/01.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/02.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/03.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/04.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/05.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/06.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/07.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/09.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/10.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/11.webp"
+            alt="тут диплом :-)"
+          />
+          <img
+            class="certificates_item"
+            src="./img/certificates/08.webp"
+            alt="тут диплом :-)"
+          />
+        </div>
+      </div>
+
+      <div id="form" class="form_wrap">
+        <div class="project_titile">
+          <h2 data-block="form" class="project_titile-text">Обратная связь</h2>
+        </div>
+        <form
+          class="form"
+          enctype="multipart/form-data"
+          method="post"
+          id="form"
+          onsubmit="send(event, 'https://yakovenko-aleksandr.ru/send/send.php')"
+        >
+          <input required type="text" name="name" placeholder="ФИО" />
+          <input
+            required
+            type="email"
+            name="email"
+            id=""
+            placeholder="Ваш email"
+          />
+          <input
+            type="tel"
+            name="text"
+            id=""
+            placeholder="+7 (999) 99 99 991"
+          />
+          <button class="form_btn">Отправить</button>
+          <div class="success_send">отправлено успешно :-)</div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
