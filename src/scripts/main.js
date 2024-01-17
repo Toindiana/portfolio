@@ -114,12 +114,13 @@ function send(event, php) {
 }
 
 const activeItemNav = (nameLink) => {
+  console.log(nameLink);
   document.querySelectorAll("[data-activ]").forEach((el) => {
     el.classList.remove("active");
   });
   document.querySelector(`[data-activ='${nameLink}']`).classList.add("active");
 
-  if (nameLink === "html" || nameLink === "js") {
+  if (nameLink === "html" || nameLink === "js" || nameLink === "skills") {
     setTimeout(() => {
       if (document.querySelector(".no_block") !== null) {
         document.querySelector(".no_block").classList.remove("no_block");
