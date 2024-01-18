@@ -50,6 +50,10 @@ ul {
   color: rgb(30, 144, 255);
   cursor: pointer;
 }
+.logo img {
+  animation: logo 1.3s infinite;
+}
+
 .logo_profession {
   color: #000;
 }
@@ -348,6 +352,18 @@ main {
   margin-top: -1px;
   transform: skewX(-45deg);
   left: 0;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1.02) rotate(1deg);
+  }
+  100% {
+    transform: scale(1) rotate(-1deg);
+  }
 }
 
 @-webkit-keyframes top-out {
