@@ -708,22 +708,27 @@
         <form
           class="form"
           enctype="multipart/form-data"
-          method="post"
           id="form"
-          onsubmit="send(event, 'https://yakovenko-aleksandr.ru/send/send.php')"
+          onsubmit="send(event)"
         >
-          <input required type="text" name="name" placeholder="ФИО" />
+          <input
+            id="formText"
+            required
+            type="text"
+            name="name"
+            placeholder="ФИО"
+          />
           <input
             required
             type="email"
             name="email"
-            id=""
+            id="formEmail"
             placeholder="Ваш email"
           />
           <input
             type="tel"
             name="text"
-            id=""
+            id="formTel"
             placeholder="+7 (999) 99 99 991"
           />
           <button class="form_btn">Отправить</button>

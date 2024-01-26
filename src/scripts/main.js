@@ -20,7 +20,7 @@ screenModileMenu.addEventListener("click", () => {
   navigation.classList.toggle("navigation_open");
   screenModileMenu.classList.toggle("screenModileMenu-open");
 });
-
+console.log();
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -71,50 +71,53 @@ const formCleaner = () => {
   });
 };
 
-function send(event, php) {
-  console.log("Отправка запроса");
+function send(event) {
+  event.preventDefault();
   formBtn.classList.add("animation_btn");
-  event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-  var req = new XMLHttpRequest();
-  req.open("POST", php, true);
-  req.onload = function () {
-    if (req.status >= 200 && req.status < 400) {
-      // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
-      if (JSON.parse(req.response).result == "success") {
-        // Если сообщение отправлено
-        // alert("Сообщение отправлено");
-        formBtn.style.display = "none";
-        successSend.style.display = "block";
-        formCleaner();
-      } else {
-        // Если произошла ошибка
-        // alert("Ошибка. Сообщение не отправлено");
+  const text = document.getElementById("formText");
+  const email = document.getElementById("formEmail");
+  const tel = document.getElementById("formTel");
+
+  const url = "https://yakovenko-aleksandr.ru/mailSend.php";
+  const bodyForm = new FormData();
+  bodyForm.append("text", text.value);
+  bodyForm.append("email", email.value);
+  bodyForm.append("tel", tel.value);
+
+  // Опции запроса
+  const options = {
+    method: "POST",
+    body: bodyForm,
+  };
+
+  // Отправка запроса с использованием fetch
+  fetch(url, options)
+    .then((response) => {
+      if (!response.ok) {
         formBtn.style.display = "none";
         successSend.style.display = "block";
         successSend.textContent = "ошибка...";
         formCleaner();
+        throw new Error(`Ошибка HTTP: ${response.status}`);
       }
-      // Если не удалось связаться с php файлом
-    } else {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      formBtn.style.display = "none";
+      successSend.style.display = "block";
+      formCleaner();
+    })
+    .catch((error) => {
+      console.error(error);
       formBtn.style.display = "none";
       successSend.style.display = "block";
       successSend.textContent = "ошибка...";
       formCleaner();
-    }
-  };
-
-  // Если не удалось отправить запрос. Стоит блок на хостинге
-  req.onerror = function () {
-    //alert("Ошибка отправки запроса");
-    formBtn.style.display = "none";
-    successSend.style.display = "block";
-    formCleaner();
-  };
-  req.send(new FormData(event.target));
+    });
 }
 
 const activeItemNav = (nameLink) => {
-  console.log(nameLink);
   document.querySelectorAll("[data-activ]").forEach((el) => {
     el.classList.remove("active");
   });
